@@ -1,9 +1,10 @@
-def numeros_pares(a = [])
-  ray =  a.select{|num| num % 2 == 0}
-  for i in ray
+def numeros_pares(array = [])
+  array2 =  array.select{|numero| numero % 2 == 0}
+  for i in array2
     "#{ i }"
   end
 end
+
 puts numeros_pares([0, 1, 2, 3, 4]).inspect # [0, 2, 4]
 puts numeros_pares([120, 876, 934, 1298]).inspect # [120, 876, 934, 1298]
 puts numeros_pares([7, 921, 43, 9649]).inspect # []
